@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Akkio HSL Color Code Challenge",
-  description: "Akkio HSL Color Code Challenge by Sean Hasenstein",
+  title: "HSL Color Code Challenge by Sean Hasenstein",
+  description: "HSL Color Code Challenge by Sean Hasenstein",
 };
 
 export default function RootLayout({

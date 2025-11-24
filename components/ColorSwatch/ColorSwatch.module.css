@@ -1,0 +1,66 @@
+.swatch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0), 0 3px 4px 0 rgba(0, 0, 0, 0);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.swatch:hover {
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1), 0 3px 4px 0 rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
+.colorDisplay {
+  flex: 1;
+  min-height: 120px;
+}
+
+.info {
+  padding: 1rem;
+}
+
+.name {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+}
+
+.rgb {
+  font-size: 0.875rem;
+  opacity: 0.9;
+}
+
+.hex {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin-top: 0.25rem;
+}
+
+.textLight {
+  color: white;
+}
+
+.textDark {
+  color: black;
+}
+
+.tooltip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 0.5rem 0.875rem;
+  border-radius: 0 0 6px 0;
+  font-size: 0.875rem;
+  font-weight: 600;
+  white-space: nowrap;
+  pointer-events: none;
+}

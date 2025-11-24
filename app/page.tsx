@@ -1,9 +1,5 @@
-import styles from "./page.module.css";
+import ColorGrid from "@/components/ColorGrid";
 
 export default function Home() {
-  return (
-    <main className={styles.page}>
-      <h1>Akkio Code Challenge by Sean Hasenstein</h1>
-    </main>
-  );
+  return <ColorGrid />;
 }
