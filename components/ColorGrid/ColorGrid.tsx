@@ -15,7 +15,7 @@ export default function ColorGrid() {
   const [saturation, setSaturation] = useState(100);
   const [lightness, setLightness] = useState(50);
   const [colors, setColors] = useState<ColorData[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [tooltipVisibleHex, setTooltipVisibleHex] = useState<string | null>(
     null
@@ -24,8 +24,8 @@ export default function ColorGrid() {
     null
   );
 
-  const debouncedSaturation = useDebounce(saturation, 500);
-  const debouncedLightness = useDebounce(lightness, 500);
+  const debouncedSaturation = useDebounce(saturation);
+  const debouncedLightness = useDebounce(lightness);
 
   // Fetch colors when debounced values change
   useEffect(() => {
